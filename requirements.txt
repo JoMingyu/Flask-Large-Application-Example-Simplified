@@ -1,0 +1,6 @@
+Flask == 0.12.2
+Flask_Cors == 3.0.3
+Flask_RESTful == 0.3.6
+flasgger == 0.8.0
+mongoengine == 0.15.0
+ujson == 1.35
