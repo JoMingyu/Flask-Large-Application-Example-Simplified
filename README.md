@@ -1,6 +1,8 @@
 # Flask-Large-Application-Example-Simplified
 This is how I structure my large Flask applications. - Simplified version
 
+개인화되어 있던 MongoDB, Swagger와 같은 부분의 보일러플레이트를 제거하고, 보편적으로 사용하는 alembic과 같은 부분들을 추가했습니다.
+
 ## API Checklist
 ### API Spec
 - [ ] Swagger나 Redoc 등을 사용해 API를 문서화하세요.
