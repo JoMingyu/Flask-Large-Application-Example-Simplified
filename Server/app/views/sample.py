@@ -9,6 +9,5 @@ api.prefix = '/prefix'
 class Sample(Resource):
     def get(self):
         return {
-            'at': self.now,
             'msg': 'hello!'
         }
