@@ -1,5 +1,5 @@
-from flask import Blueprint
-from flask_restful import Api, Resource, request
+from flask import Blueprint, request
+from flask_restful import Api, Resource
 
 from app.views import json_required
 
