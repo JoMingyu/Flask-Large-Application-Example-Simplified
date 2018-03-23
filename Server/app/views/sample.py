@@ -1,5 +1,7 @@
 from flask import Blueprint
-from flask_restful import Api, Resource
+from flask_restful import Api, Resource, request
+
+from app.views import json_required
 
 api = Api(Blueprint('sample_api', __name__))
 api.prefix = '/prefix'
@@ -7,7 +9,6 @@ api.prefix = '/prefix'
 
 @api.resource('/sample')
 class Sample(Resource):
-    def get(self):
-        return {
-            'msg': 'hello!'
-        }
+    @json_required('name', 'age')
+    def post(self):
+        return request.json
